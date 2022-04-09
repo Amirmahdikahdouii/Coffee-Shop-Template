@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: black;
+}
+
+@font-face {
+    font-family: welcome;
+    src: url('../font/Inspiration-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: header-main-title;
+    src: url('../font/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: header-main-description;
+    src: url('../font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: our-commitment-title;
+    src: url('../font/LibreFranklin-Light.ttf');
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/pattern.jpg');
+    background-position: center;
+    background-color: #6f4d37;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.main-container {
+    width: 40%;
+    padding: 2% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+}
+
+.logo {
+    padding-bottom: 2%;
+    width: 90%;
+    text-align: left;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    font-family: our-commitment-title;
+    border-bottom: 1px solid #ccc;
+}
+
+.sign-in-up-container {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-title {
+    padding: 1% 5%;
+    margin: 4% 5%;
+    width: fit-content;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: header-main-description;
+    cursor: pointer;
+    border: none;
+}
+
+.form-title:hover {
+    transition: all 500ms;
+    padding: 1% 5%;
+    color: rgb(238, 197, 144);
+    border: .5px solid #ccc;
+    border-radius: 10px;
+}
+
+#login-form-switch-button>a:hover {
+    transition: all 500ms;
+    color: rgb(238, 197, 144);
+}
+
+#login-form-switch-button>a {
+    color: white;
+}
+
+.form-title-active {
+    color: rgb(238, 197, 144);
+}
+
+.form {
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.form-input {
+    margin: 2% 0;
+    padding: 5% 10% 5% 5%;
+    border: none;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: header-main-title;
+}
+
+.form-input:focus {
+    background-color: rgb(241, 211, 166);
+    border: none;
+}
+
+.submit-form-button {
+    margin: 5% 0;
+    padding: 2% 8%;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: blanchedalmond;
+    font-family: header-main-description;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.submit-form-button:hover {
+    transition: all 500ms;
+    background-color: rgb(241, 211, 166);
+}
+
+.rules-acception-text {
+    color: white;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: header-main-description;
+}
+
+.rules-acception-text>a {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+@media screen and (max-width:1200px) {
+    .logo {
+        font-size: 30px;
+    }
+
+    .form-title {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-container {
+        width: 60%;
+    }
+
+    .logo {
+        font-size: 25px;
+    }
+
+    .form-title {
+        font-size: 18px;
+    }
+}
