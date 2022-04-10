@@ -39,12 +39,8 @@ a {
     color: black;
 }
 
-.header {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-    align-items: center;
+.header{
+    padding: 0;
 }
 
 .header-background {
@@ -58,68 +54,6 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-}
-
-.header-menu-background {
-    width: 100%;
-    padding: 2% 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, .4);
-    border-bottom: 1px solid rgba(255, 255, 255, .5);
-}
-
-.header-nav-container {
-    padding: 1% 2%;
-    width: 85%;
-    background-color: rgba(0, 0, 0, .6);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-radius: 10px;
-}
-
-.logo {
-    width: 20%;
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    cursor: pointer;
-    font-family: header-main-title;
-}
-
-.header-menu {
-    width: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-#header-nav-menu-icon {
-    display: none;
-    color: white;
-}
-
-#header-nav-menu-close-icon {
-    display: none;
-    color: white;
-}
-
-.header-menu-item {
-    margin: 0 2%;
-}
-
-.header-menu-item>a {
-    color: #ccc;
-    font-weight: bold;
-    font-size: 18px;
-    font-family: our-commitment-title;
-}
-
-.header-menu-item>a:hover {
-    transition: all 500ms;
-    color: white;
 }
 
 .header-main-container {
@@ -920,14 +854,6 @@ a {
 }
 
 @media screen and (max-width:1200px) {
-    .header-background {
-        display: none;
-    }
-
-    .logo {
-        font-size: 1.5rem;
-    }
-
     .header-main-title {
         width: 80%;
         font-size: 40px;
@@ -1054,57 +980,6 @@ a {
 
 
 @media screen and (max-width:768px) {
-    .header-nav-container {
-        flex-flow: column nowrap;
-        align-items: flex-start;
-    }
-
-    .logo {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        width: 100%;
-        font-size: 15px;
-    }
-
-    .logo>span {
-        display: flex;
-        align-items: center;
-    }
-
-
-    .header-menu {
-        display: none;
-        width: 100%;
-        flex-flow: column nowrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .header-menu-item {
-        margin: 1% 0;
-        padding: 2% 0;
-        width: 60%;
-        display: flex;
-        justify-content: center;
-        border-bottom: 1px solid #ccc;
-        font-size: 12px;
-    }
-
-    .header-menu-item>a {
-        text-align: center;
-    }
-
-    #header-nav-menu-icon {
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    #header-nav-menu-icon>path {
-        float: right;
-        align-self: flex-end;
-    }
-
     .header-main-description {
         width: 80%;
     }

@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: welcome;
+    src: url('../font/Inspiration-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: header-main-title;
+    src: url('../font/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: header-main-description;
+    src: url('../font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: our-commitment-title;
+    src: url('../font/LibreFranklin-Light.ttf');
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('../img/pattern.jpg');
+    background-position: center;
+    background-color: #6f4d37;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-section {
+    margin: 1% 0;
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.sideBar-menu-container {
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sideBar-menu-user-profile-photo-container {
+    margin: 1% 0 3%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sideBar-menu-user-profile-photo-exit-botton {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.sideBar-menu-user-profile-photo-exit-botton>svg {
+    width: 22px;
+    height: 22px;
+    color: #aaa;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.sideBar-menu-user-profile-photo-exit-botton>svg:hover {
+    color: white;
+}
+
+.sideBar-menu-user-profile-photo-holder {
+    margin: 2% 0;
+    width: 50%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+.sideBar-menu-user-profile-photo {
+    border-radius: 50%;
+}
+
+.sideBar-menu-user-profile-photo-username {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    font-family: header-main-title;
+}
+
+.sideBar-menu-items-container {
+    width: 90%;
+    padding: 1% 0;
+}
+
+.sideBar-menu-list {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.sideBar-menu-item {
+    list-style: disc;
+    color: navajowhite;
+    margin: 2% 0 1% 2%;
+}
+
+.sideBar-menu-item>a {
+    color: #aaa;
+    font-size: 17px;
+    font-family: header-main-description;
+    transition: all 500ms;
+}
+
+.sideBar-menu-item>a:hover {
+    color: white;
+}
+
+.sideBar-menu-item>.sideBar-menu-item-active {
+    color: white;
+    font-weight: bold;
+}
+
+.main-section-content-container {
+    width: 70%;
+    padding: 1%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.main-section-content-title {
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: our-commitment-title;
+    border-bottom: 1px solid #ccc;
+}
+
+.dashboard-section-info-list {
+    display: block;
+    margin: 1% 0;
+    padding: 1% 0;
+    width: 80%;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.dashboard-section-info-list-title {
+    width: 80%;
+    margin: 1% 0 5%;
+    color: #c59779;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: header-main-description;
+}
+
+.dashboard-section-info-item {
+    width: 60%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-section-info-item-icon {
+    width: 10%;
+    color: #c59779;
+}
+
+.dashboard-section-info-item-key {
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: header-main-title;
+}
+
+.dashboard-section-info-item-value {
+    width: 60%;
+    color: white;
+    font-size: 18px;
+    font-family: header-main-title;
+}
+
+.main-section-content-products-carousel {
+    width: 100%;
+    padding: 1% 0;
+    margin: 1% 0;
+
+}
