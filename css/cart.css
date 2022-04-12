@@ -107,6 +107,7 @@ body {
 }
 
 .continue-shopping-button {
+    margin: 4% 0 2%;
     width: 60%;
     padding: 5% 0;
     color: white;
@@ -116,173 +117,149 @@ body {
     font-weight: bold;
     font-family: header-main-title;
     background-color: #ef4056;
+    cursor: pointer;
 }
 
 .cart-items-container {
     width: 68%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-.cart-list-item {
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: center;
+    border-radius: 10px;
+    border: 1px solid rgba(170, 170, 170, 0.3);
+    background-color: rgba(170, 170, 170, .05);
+}
+
+.cart-list-item {
+    padding-bottom: 2%;
+    display: flex;
+    width: 95%;
     margin: 3% 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-list-item-image-count-container {
+    width: 20%;
+    min-height: 180px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .cart-list-item-image-container {
-    padding: 1%;
-    width: 90%;
+    width: 80%;
+    max-height: 300px;
+    padding: 2%;
+    background-color: #ddd;
     border-radius: 10px;
-    background-color: white;
-    margin: 1% 0;
-    transition: all 500ms;
-}
-
-.cart-list-item-image-container:hover {
-    background-color: black;
 }
 
 .cart-list-item-image {
     width: 100%;
+    max-width: 100%;
     border-radius: 10px;
+}
+
+.cart-list-item-count-container {
+    padding: 4% 5%;
+    width: 70%;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.cart-list-item-mines-button, .cart-list-item-plus-button, .cart-list-item-delete-button {
+    width: 30%;
+    padding: 5% 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
     transition: all 500ms;
 }
 
-.cart-list-item-image:hover {
-    opacity: .8;
+.cart-list-item-mines-button, .cart-list-item-delete-button {
+    color: white;
+    background-color: #a80e1b;
+}
+
+.cart-list-item-mines-button:hover, .cart-list-item-delete-button:hover {
+    background-color: #c71221;
+}
+
+.cart-list-item-plus-button {
+    color: white;
+    background-color: rgba(5, 131, 210, .8);
+}
+
+.cart-list-item-plus-button:hover {
+    background-color: rgba(5, 131, 210, 1);
+}
+
+.cart-list-item-count {
+    width: 30%;
+    padding: 5% 0;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: header-main-title;
+}
+
+.cart-list-item-mines-button {
+    display: none;
+}
+
+.cart-list-item-main-section {
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 .cart-list-item-title {
-    margin: 1% 0;
     color: white;
+    font-size: 28px;
     font-weight: bold;
-    font-size: 25px;
+    font-family: our-commitment-title;
+}
+
+.cart-list-item-sell-info {
+    margin: .5% 0;
+    justify-content: flex-start;
+}
+
+.cart-list-item-sell-info>svg {
+    color: #aaa;
+}
+
+.cart-list-item-sell-info-text {
+    margin: 0 2%;
+    color: #ccc;
+    font-size: 13px;
+    font-weight: normal;
     font-family: header-main-description;
 }
 
-.cart-list-item-cart-info-container {
-    width: 70%;
-    margin: 1% 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.cart-list-item-cart-info-count {
-    margin: 0 2% 0 0;
-    background-color: rgba(0, 0, 0, .5);
-    padding: 4% 8%;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
-    font-size: 16px;
-    font-family: our-commitment-title;
-    border: 1px solid rebeccapurple;
-}
-
-.cart-list-item-cart-info-buttons-container {
-    width: 30%;
-    padding: 1%;
+.cart-list-item-price-container {
+    margin-left: 1%;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: flex-start;
-    align-items: flex-start;
 }
 
-.cart-list-item-cart-info-plus-count-button {
-    width: 30px;
-    padding: 5% 0;
-    background-color: rgba(27, 78, 187, .7);
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 500ms;
-}
-
-.cart-list-item-cart-info-plus-count-button:hover {
-    background-color: rgba(27, 78, 187, 1);
-}
-
-.cart-list-item-cart-info-mines-count-button {
-    width: 30px;
-    padding: 5% 0;
-    background-color: rgba(187, 27, 27, .7);
-    color: white;
-    font-weight: bold;
-    font-size: 17px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 500ms;
-}
-
-.cart-list-item-cart-info-mines-count-button:hover {
-    background-color: rgba(187, 27, 27, 1);
-}
-
-.cart-list-item-cart-info-remove-button {
-    padding: 4% 6%;
-    font-size: 17px;
-    color: white;
-    background-color: rgba(187, 27, 27, .7);
-    font-family: our-commitment-title;
-    font-weight: bold;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 500ms;
-}
-
-.cart-list-item-cart-info-remove-button:hover {
-    background-color: rgba(187, 27, 27, 1);
-}
-
-.cart-list-item-product-button {
-    padding: 4% 6%;
-    color: white;
-    background-color: rgba(0, 0, 0, .8);
-    border: none;
-    border-radius: 10px;
+.cart-list-item-price-without-off {
+    color: #bbb;
+    color: #a50b20;
     font-size: 15px;
     font-weight: bold;
-    font-family: header-main-title;
-    transition: all 500ms;
-    cursor: pointer;
+    font-family: header-main-description;
+    text-decoration: line-through;
 }
 
-.cart-list-item-product-button:hover {
-    background-color: white;
-    color: black;
-}
-
-.see-full-cart-button-container {
-    width: 100%;
-    padding: 1% 0;
-}
-
-.cart-list-item-button {
-    padding: 1% 2%;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: our-commitment-title;
-    color: black;
-    background-color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 500ms;
-}
-
-.cart-list-item-button:hover {
-    background-color: rgba(0, 0, 0, .8);
+.cart-list-item-price {
     color: white;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: header-main-description;
 }
