@@ -21,22 +21,21 @@ plusBottons.forEach((plusButton, index) => {
 });
 
 minusBottons.forEach((minusButton, index) => {
-    minusButton.addEventListener('click', (e) => {
+    minusButton.addEventListener('click', () => {
         let count;
         count = minusButton.nextElementSibling.textContent;
         count = parseInt(count);
-        if (count === 2) {
-            e.target.style.display = 'none';
-            e.target.parentNode.style.display = 'none';
+        count--;
+        if (count === 1) {
+            minusBottons[index].style.display = 'none';
             deleteButtons[index].style.display = 'flex';
         }
-        count--;
         minusButton.nextElementSibling.textContent = count;
     })
 });
 
 deleteButtons.forEach((deleteButton, index) => {
-    deleteButton.addEventListener('click', (e) => {
+    deleteButton.addEventListener('click', () => {
         let count;
         count = productCounters[index].textContent;
         count = parseInt(count);
