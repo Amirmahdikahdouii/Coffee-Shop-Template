@@ -1,0 +1,130 @@
+.footer {
+    width: 100%;
+    padding: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+.footer-item {
+    width: 28%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+.footer-item-address-title {
+    width: 90%;
+    text-align: left;
+    margin: 2% 0 5%;
+    font-family: our-commitment-title;
+    font-size: 24px;
+}
+
+.footer-item-address {
+    margin: 1% 0 3%;
+    width: 90%;
+    font-family: header-main-description;
+}
+
+.footer-item-address-info {
+    width: 90%;
+    margin: 2% 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: header-main-description;
+}
+
+.footer-item-address-info>a {
+    width: 100%;
+    color: rgba(245, 245, 245, 0.678);
+    text-align: left;
+    font-size: 17px;
+}
+
+.footer-item-address-info>a:hover {
+    transition: all 550ms;
+    color: white;
+}
+
+.copyright {
+    width: 90%;
+    margin: 7% 0 0;
+    font-size: 15px;
+    font-family: header-main-description;
+}
+
+.copyright>a {
+    color: #6f4d37;
+}
+
+.footer-item-social-media-icons {
+    margin: 5% 0;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-item-social-media-icons>svg {
+    cursor: pointer;
+}
+
+@media screen and (max-width:768px) {
+    .footer {
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer-item {
+        padding-bottom: 2%;
+        width: 70%;
+        align-items: center;
+        border-radius: 0;
+        border-bottom: 1px solid rgba(204, 204, 204, 0.699);
+    }
+
+    .footer-item-address-title {
+        text-align: center;
+    }
+
+    .footer-item-address-info>a {
+        text-align: center;
+    }
+
+    .footer-item-address-info-name {
+        text-align: center;
+    }
+
+    .footer-item-address-info>span {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        width: 60%;
+        text-align: center;
+    }
+
+    .footer-item-address {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .footer-item-address-title {
+        font-size: 22px;
+    }
+
+    .copyright {
+        width: 90%;
+        text-align: left;
+    }
+}
