@@ -73,10 +73,13 @@
             <div class="sideBar-menu-items-container center">
                 <ul class="sideBar-menu-list">
                     <li class="sideBar-menu-item"><a href="#" id="dashboard"
-                            onclick="showContentHandler('main-section-content-container-dashboard', 'dashboard')">Dashboard</a></li>
-                    <li class="sideBar-menu-item"><a href="#" id="cart" class="sideBar-menu-item-active"
+                            onclick="showContentHandler('main-section-content-container-dashboard', 'dashboard')">Dashboard</a>
+                    </li>
+                    <li class="sideBar-menu-item"><a href="#" id="cart"
                             onclick="showContentHandler('main-section-content-container-cart', 'cart')">Cart</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Factors</a></li>
+                    <li class="sideBar-menu-item"><a href="#"
+                            onclick="showContentHandler('main-section-content-container-factors', 'factors')"
+                            id="factors" class="sideBar-menu-item-active">Factors</a></li>
                     <li class="sideBar-menu-item"><a href="#">Orders</a></li>
                     <li class="sideBar-menu-item"><a href="#">Addresses</a></li>
                     <li class="sideBar-menu-item"><a href="#">MemberShip</a></li>
@@ -204,7 +207,153 @@
                 </div>
             </div>
             <div class="see-full-cart-button-container center">
-                <a class="cart-list-item-button" href="#">See Full Cart</a>
+                <a class="cart-list-item-button" href="./cart.html">See Full Cart</a>
+            </div>
+        </div>
+
+        <div class="main-section-content-container" id="main-section-content-container-factors">
+            <h1 class="main-section-content-title">Factors</h1>
+            <div class="factors-container">
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Factor Item 1</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container">
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Payment Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Count</span>
+                            <span class="factor-item-according-line-value">3</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Price</span>
+                            <span class="factor-item-according-line-value">25.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Received</span>
+                            <span class="factor-item-according-line-value">&#10004;</span>
+                        </div>
+                        <div class="more-detail-bottom-container center">
+                            <a class="more-detail-bottom" href="#">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Factor Item 2</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container">
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Payment Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Count</span>
+                            <span class="factor-item-according-line-value">3</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Price</span>
+                            <span class="factor-item-according-line-value">25.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Received</span>
+                            <span class="factor-item-according-line-value">&#10004;</span>
+                        </div>
+                        <div class="more-detail-bottom-container center">
+                            <a class="more-detail-bottom" href="#">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Factor Item 3</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container">
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Payment Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Count</span>
+                            <span class="factor-item-according-line-value">3</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Price</span>
+                            <span class="factor-item-according-line-value">25.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Received</span>
+                            <span class="factor-item-according-line-value">&#10004;</span>
+                        </div>
+                        <div class="more-detail-bottom-container center">
+                            <a class="more-detail-bottom" href="#">More Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Factor Item 4</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container">
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Payment Date</span>
+                            <span class="factor-item-according-line-value">2021/02/01</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Count</span>
+                            <span class="factor-item-according-line-value">3</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Price</span>
+                            <span class="factor-item-according-line-value">25.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line">
+                            <span class="factor-item-according-line-title">Received</span>
+                            <span class="factor-item-according-line-value">&#10007;</span>
+                        </div>
+                        <div class="more-detail-bottom-container center">
+                            <a class="more-detail-bottom" href="#">More Detail</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

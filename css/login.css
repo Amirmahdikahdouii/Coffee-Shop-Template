@@ -84,7 +84,7 @@ body {
     font-weight: bold;
     font-family: header-main-description;
     cursor: pointer;
-    border: none;
+    border: .5px solid rgba(0, 0, 0, 0);
 }
 
 .form-title:hover {

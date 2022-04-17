@@ -383,3 +383,131 @@ body {
     background-color: rgba(0, 0, 0, .8);
     color: white;
 }
+
+#main-section-content-container-cart {
+    display: none;
+}
+
+.factors-container {
+    width: 80%;
+    padding: 2% 0;
+    margin: 2% 0 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #fdfbfb;
+}
+
+.factor-item {
+    margin-bottom: 2%;
+    width: 95%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 10px;
+}
+
+.factor-item:last-child {
+    margin: 0;
+}
+
+.factor-item-header {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px 10px 0 0;
+    transition: all 500ms;
+}
+
+.factor-item-title {
+    width: 98%;
+    text-align: left;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: header-main-title;
+}
+
+.factor-item-date-container {
+    width: 98%;
+    margin: 1% 0 .2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.factor-item-date {
+    color: #ccc;
+    color: rgb(71, 70, 70);
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.factor-item-menu-botton {
+    font-weight: bold;
+    font-size: 25px;
+    color: rgb(71, 70, 70);
+    cursor: pointer;
+}
+
+.factor-item-menu-botton-close {
+    display: none;
+}
+
+.factor-item-according-container {
+    width: 85%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /* display: none; */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.factor-item-according-line {
+    padding: 1% 0;
+    margin: .5% 0;
+    width: 100%;
+    border-bottom: 1px solid #aaa;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.factor-item-according-line-title, .factor-item-according-line-value {
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: header-main-description;
+}
+
+.more-detail-bottom-container {
+    width: 100%;
+    margin: 2% 0 1%;
+}
+
+.more-detail-bottom {
+    padding: 2% 4%;
+    background-color: rgba(0, 0, 0, .7);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: our-commitment-title;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.more-detail-bottom:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
