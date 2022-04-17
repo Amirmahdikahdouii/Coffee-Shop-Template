@@ -511,3 +511,86 @@ body {
     color: white;
     background-color: rgba(0, 0, 0, 1);
 }
+
+#main-section-content-container-factors {
+    display: none;
+}
+
+.orders-item-according-product {
+    width: 100%;
+    margin-bottom: 2%;
+    border-bottom: 1px solid black;
+}
+
+.orders-item-according-product:last-child {
+    margin: 0;
+    border-bottom: none;
+}
+
+.orders-item-according-line-header {
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.orders-item-according-line-title {
+    font-size: 20px;
+}
+
+.orders-item-according-line-description {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .7);
+    font-weight: normal;
+    font-family: header-main-description;
+}
+
+.orders-see-product-bottom {
+    width: fit-content;
+    margin: 2% 0;
+    padding: 2% 4%;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: our-commitment-title;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+.orders-see-product-bottom:hover {
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.orders-item-according-line-image-container {
+    width: 80px;
+    padding: 1%;
+    background-color: #c59779;
+    border-radius: 10px;
+}
+
+.orders-item-according-line-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.orders-item-according-line-title-container {
+    width: 70%;
+    height: inherit;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.orders-item-according-line:last-child {
+    border: none;
+}
+
+.orders-item-according-container>.orders-item-according-line>span {
+    font-size: 20px;
+}
+
+.orders-item-according-container>.orders-item-according-line:last-child>span:nth-child(2) {
+    color: red;
+}
+
+#main-section-content-container-orders{
+    display: none;
+}

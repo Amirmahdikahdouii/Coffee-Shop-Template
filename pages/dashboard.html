@@ -79,9 +79,13 @@
                             onclick="showContentHandler('main-section-content-container-cart', 'cart')">Cart</a></li>
                     <li class="sideBar-menu-item"><a href="#"
                             onclick="showContentHandler('main-section-content-container-factors', 'factors')"
-                            id="factors" class="sideBar-menu-item-active">Factors</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Orders</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Addresses</a></li>
+                            id="factors">Factors</a></li>
+                    <li class="sideBar-menu-item"><a href="#"
+                            onclick="showContentHandler('main-section-content-container-orders', 'orders')"
+                            id="orders">Orders</a></li>
+                    <li class="sideBar-menu-item"><a href="#"
+                            onclick="showContentHandler('main-section-content-container-addresses', 'addresses')" id="addresses"
+                            class="sideBar-menu-item-active">Addresses</a></li>
                     <li class="sideBar-menu-item"><a href="#">MemberShip</a></li>
                     <li class="sideBar-menu-item"><a href="#">Favorites</a></li>
                     <li class="sideBar-menu-item"><a href="#">Change Personal Info</a></li>
@@ -173,7 +177,7 @@
                         </div>
                         <button class="cart-list-item-cart-info-remove-button">Remove</button>
                     </div>
-                    <button class="cart-list-item-product-button">See Product</button>
+                    <a class="cart-list-item-product-button" href="./products.html">See Product</a>
                 </div>
                 <div class="cart-list-item">
                     <div class="cart-list-item-image-container center">
@@ -188,7 +192,7 @@
                         </div>
                         <button class="cart-list-item-cart-info-remove-button">Remove</button>
                     </div>
-                    <button class="cart-list-item-product-button">See Product</button>
+                    <a class="cart-list-item-product-button" href="./products.html">See Product</a>
                 </div>
                 <div class="cart-list-item">
                     <div class="cart-list-item-image-container center">
@@ -203,7 +207,7 @@
                         </div>
                         <button class="cart-list-item-cart-info-remove-button">Remove</button>
                     </div>
-                    <button class="cart-list-item-product-button">See Product</button>
+                    <a class="cart-list-item-product-button" href="./products.html">See Product</a>
                 </div>
             </div>
             <div class="see-full-cart-button-container center">
@@ -355,6 +359,226 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="main-section-content-container" id="main-section-content-container-orders">
+            <h1 class="main-section-content-title">Orders</h1>
+            <div class="factors-container">
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Order Item 1</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container orders-item-according-container">
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 1</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 2</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">Total Price</span>
+                            <span class="factor-item-according-line-value">40.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">State</span>
+                            <span class="factor-item-according-line-value">Ready to Post</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Order Item 2</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container orders-item-according-container">
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 1</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 2</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">Total Price</span>
+                            <span class="factor-item-according-line-value">40.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">State</span>
+                            <span class="factor-item-according-line-value">Ready to Post</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="factor-item">
+                    <div class="factor-item-header">
+                        <h3 class="factor-item-title">Order Item 3</h3>
+                        <div class="factor-item-date-container">
+                            <span class="factor-item-date">2021/02/01</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-open">&#x2304;</span>
+                            <span class="factor-item-menu-botton factor-item-menu-botton-close">&#10005;</span>
+                        </div>
+                    </div>
+                    <div class="factor-item-according-container orders-item-according-container">
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 1</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="orders-item-according-product">
+                            <div class="factor-item-according-line orders-item-according-line-header">
+                                <div class="orders-item-according-line-title-container">
+                                    <h4 class="factor-item-according-line-title orders-item-according-line-title">
+                                        Product
+                                        Item 2</h4>
+                                    <p class="orders-item-according-line-description">Lorem ipsum dolor sit amet
+                                        consectetur
+                                        adipisicing elit. Tenetur, dolorum.</p>
+                                    <a href="./products.html" class="orders-see-product-bottom">See Product</a>
+                                </div>
+                                <div class="orders-item-according-line-image-container center">
+                                    <img class="orders-item-according-line-image" src="../img/coffe-cup.jpg"
+                                        alt="Product Item" />
+                                </div>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">Count</span>
+                                <span class="factor-item-according-line-value">4</span>
+                            </div>
+                            <div class="factor-item-according-line orders-item-according-line">
+                                <span class="factor-item-according-line-title">price</span>
+                                <span class="factor-item-according-line-value">5.00 $</span>
+                            </div>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">Total Price</span>
+                            <span class="factor-item-according-line-value">40.00 $</span>
+                        </div>
+                        <div class="factor-item-according-line orders-item-according-line">
+                            <span class="factor-item-according-line-title">State</span>
+                            <span class="factor-item-according-line-value">Ready to Post</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-section-content-container" id="main-section-content-container-addresses">
+            <h1 class="main-section-content-title">Addresses</h1>
         </div>
     </section>
 
