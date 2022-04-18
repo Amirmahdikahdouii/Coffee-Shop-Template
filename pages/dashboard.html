@@ -72,26 +72,26 @@
             </div>
             <div class="sideBar-menu-items-container center">
                 <ul class="sideBar-menu-list">
-                    <li class="sideBar-menu-item"><a href="#" id="dashboard"
-                            onclick="showContentHandler('main-section-content-container-dashboard', 'dashboard')">Dashboard</a>
+                    <li class="sideBar-menu-item"><span id="dashboard"
+                            onclick="showContentHandler('main-section-content-container-dashboard', 'dashboard')">Dashboard</span>
                     </li>
-                    <li class="sideBar-menu-item"><a href="#" id="cart"
-                            onclick="showContentHandler('main-section-content-container-cart', 'cart')">Cart</a></li>
-                    <li class="sideBar-menu-item"><a href="#"
+                    <li class="sideBar-menu-item"><span id="cart"
+                            onclick="showContentHandler('main-section-content-container-cart', 'cart')">Cart</span></li>
+                    <li class="sideBar-menu-item"><span
                             onclick="showContentHandler('main-section-content-container-factors', 'factors')"
-                            id="factors">Factors</a></li>
-                    <li class="sideBar-menu-item"><a href="#"
+                            id="factors">Factors</span></li>
+                    <li class="sideBar-menu-item"><span
                             onclick="showContentHandler('main-section-content-container-orders', 'orders')"
-                            id="orders">Orders</a></li>
-                    <li class="sideBar-menu-item"><a href="#"
-                            onclick="showContentHandler('main-section-content-container-addresses', 'addresses')" id="addresses"
-                            class="sideBar-menu-item-active">Addresses</a></li>
-                    <li class="sideBar-menu-item"><a href="#">MemberShip</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Favorites</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Change Personal Info</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Manage Password</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Settings</a></li>
-                    <li class="sideBar-menu-item"><a href="#">Exit</a></li>
+                            id="orders">Orders</span></li>
+                    <li class="sideBar-menu-item"><span
+                            onclick="showContentHandler('main-section-content-container-addresses', 'addresses')"
+                            id="addresses" class="sideBar-menu-item-active">Addresses</span></li>
+                    <li class="sideBar-menu-item"><span>MemberShip</span></li>
+                    <li class="sideBar-menu-item"><span>Favorites</span></li>
+                    <li class="sideBar-menu-item"><span>Change Personal Info</span></li>
+                    <li class="sideBar-menu-item"><span>Manage Password</span></li>
+                    <li class="sideBar-menu-item"><span>Settings</span></li>
+                    <li class="sideBar-menu-item"><span>Exit</span></li>
                 </ul>
             </div>
         </div>
@@ -579,6 +579,194 @@
 
         <div class="main-section-content-container" id="main-section-content-container-addresses">
             <h1 class="main-section-content-title">Addresses</h1>
+            <div class="user-address-container">
+                <div class="user-address-body">
+                    <div class="user-address-title-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        <h3 class="user-address-title">San Luis Obispo-California</h3>
+                    </div>
+                    <div class="user-full-address-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-house" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        <p class="user-full-address">California, San Luis Obispo, 1474 Par Drive, 93401</p>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-name">Amir Mahdi Kahdouii</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-telephone">805-784-6998</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-phone" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-phone">626-429-2967</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-mailbox" viewBox="0 0 16 16">
+                            <path
+                                d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
+                            <path
+                                d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-postCode">031-25485-52</span>
+                    </div>
+
+                    <div class="user-address-action-buttons-container center">
+                        <button class="user-address-action-button-remove center">Remove</button>
+                        <button class="user-address-action-button-edit center">Edit</button>
+                    </div>
+                </div>
+                <div class="user-address-map-container center">
+                    <img src="../img/dashboard-user-address-map.jpg" alt="Map" width="100%">
+                </div>
+                <div class="remove-address-modal-container">
+                    <div class="remove-address-modal-body">
+                        <h1 class="remove-address-modal-title">Are You Sure To Remove?</h1>
+                        <div class="remove-address-modal-buttons-container center">
+                            <button class="remove-address-modal-no-botton">No</button>
+                            <button class="remove-address-modal-yes-botton">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-address-modal-container">
+                    <div class="remove-address-modal-body">
+                        <h1 class="remove-address-modal-title">Edit Address</h1>
+                        <form class="address-modal-edit-form">
+                            <input type="text" name="address" class="address-modal-edit-form-input"
+                                placeholder="Address" />
+                            <input type="text" name="name" class="address-modal-edit-form-input" placeholder="Name" />
+                            <input type="text" name="telephone" id="address-modal-edit-form-telephoneInput"
+                                class="address-modal-edit-form-input" placeholder="Telephone" />
+                            <input type="text" name="phone" class="address-modal-edit-form-input" placeholder="Phone" />
+                            <input type="text" name="postalCode" class="address-modal-edit-form-input"
+                                placeholder="Postal Code" />
+                        </form>
+                        <div class="remove-address-modal-buttons-container center">
+                            <button class="edit-address-modal-cancel-botton">cancel</button>
+                            <button class="edit-address-modal-confirm-botton">confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="user-address-container">
+                <div class="user-address-body">
+                    <div class="user-address-title-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-geo-alt" viewBox="0 0 16 16">
+                            <path
+                                d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        <h3 class="user-address-title">San Luis Obispo-California</h3>
+                    </div>
+                    <div class="user-full-address-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-house" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z" />
+                            <path fill-rule="evenodd"
+                                d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z" />
+                        </svg>
+                        <p class="user-full-address">California, San Luis Obispo, 1474 Par Drive, 93401</p>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-person" viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-name">Amir Mahdi Kahdouii</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-telephone" viewBox="0 0 16 16">
+                            <path
+                                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-telephone">805-784-6998</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-phone" viewBox="0 0 16 16">
+                            <path
+                                d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z" />
+                            <path d="M8 14a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-phone">626-429-2967</span>
+                    </div>
+                    <div class="user-address-info-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-mailbox" viewBox="0 0 16 16">
+                            <path
+                                d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z" />
+                            <path
+                                d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z" />
+                        </svg>
+                        <span class="user-address-info user-address-info-postCode">031-25485-52</span>
+                    </div>
+
+                    <div class="user-address-action-buttons-container center">
+                        <button class="user-address-action-button-remove center">Remove</button>
+                        <button class="user-address-action-button-edit center">Edit</button>
+                    </div>
+                </div>
+                <div class="user-address-map-container center">
+                    <img src="../img/dashboard-user-address-map.jpg" alt="Map" width="100%">
+                </div>
+                <div class="remove-address-modal-container">
+                    <div class="remove-address-modal-body">
+                        <h1 class="remove-address-modal-title">Are You Sure To Remove?</h1>
+                        <div class="remove-address-modal-buttons-container center">
+                            <button class="remove-address-modal-no-botton">No</button>
+                            <button class="remove-address-modal-yes-botton">Yes</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="edit-address-modal-container">
+                    <div class="remove-address-modal-body">
+                        <h1 class="remove-address-modal-title">Edit Address</h1>
+                        <form class="address-modal-edit-form">
+                            <input type="text" name="address" class="address-modal-edit-form-input"
+                                placeholder="Address" />
+                            <input type="text" name="name" class="address-modal-edit-form-input" placeholder="Name" />
+                            <input type="text" name="telephone" id="address-modal-edit-form-telephoneInput"
+                                class="address-modal-edit-form-input" placeholder="Telephone" />
+                            <input type="text" name="phone" class="address-modal-edit-form-input" placeholder="Phone" />
+                            <input type="text" name="postalCode" class="address-modal-edit-form-input"
+                                placeholder="Postal Code" />
+                        </form>
+                        <div class="remove-address-modal-buttons-container center">
+                            <button class="edit-address-modal-cancel-botton">cancel</button>
+                            <button class="edit-address-modal-confirm-botton">confirm</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 

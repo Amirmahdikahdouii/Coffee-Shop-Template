@@ -137,6 +137,7 @@ body {
     width: 95%;
     margin: 3% 0;
     border-bottom: 1px solid #ccc;
+    transition: opacity 0.6s;
 }
 
 .cart-list-item-image-count-container {

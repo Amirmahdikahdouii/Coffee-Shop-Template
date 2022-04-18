@@ -39,6 +39,8 @@ deleteButtons.forEach((deleteButton, index) => {
         let count;
         count = productCounters[index].textContent;
         count = parseInt(count);
-        cartProducts[index].remove();
+        cartProducts[index].style.opacity = "0";
+        setTimeout(function () { cartProducts[index].style.display = "none"; }, 600);
+        // cartProducts[index].remove();
     })
 })

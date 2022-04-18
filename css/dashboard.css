@@ -132,14 +132,15 @@ body {
     margin: 2% 0 1% 2%;
 }
 
-.sideBar-menu-item>a {
+.sideBar-menu-item>span {
     color: #aaa;
     font-size: 17px;
     font-family: header-main-description;
+    cursor: pointer;
     transition: all 500ms;
 }
 
-.sideBar-menu-item>a:hover {
+.sideBar-menu-item>span:hover {
     color: white;
 }
 
@@ -591,6 +592,216 @@ body {
     color: red;
 }
 
-#main-section-content-container-orders{
+#main-section-content-container-orders {
     display: none;
+}
+
+.user-address-container {
+    margin: 2% 0 1%;
+    width: 90%;
+    padding: 1%;
+    border-radius: 10px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-address-body {
+    width: 75%;
+}
+
+.user-address-title-container {
+    width: 70%;
+    margin: 1% 0;
+    padding: 1% 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.user-address-title-container>svg {
+    margin-right: 2%;
+    color: rgba(0, 0, 0, .8);
+    font-weight: bolder;
+}
+
+.user-address-title {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: header-main-title;
+    cursor: pointer;
+}
+
+.user-full-address-container {
+    width: 100%;
+    margin: 1% 0;
+    display: flex;
+    align-items: center;
+}
+
+.user-full-address {
+    margin-left: 2%;
+    display: inline-block;
+    width: 90%;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: header-main-description;
+    color: rgb(59, 58, 58);
+}
+
+.user-address-info-container {
+    margin: 1% 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.user-address-info-container>svg, .user-full-address-container>svg {
+    width: fit-content;
+}
+
+.user-address-info {
+    margin-left: 2%;
+    display: inline-block;
+    width: 90%;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgb(59, 58, 58);
+    font-family: header-main-description;
+}
+
+.user-address-map-container {
+    width: 20%;
+    padding: .5%;
+    border-radius: 10px;
+    background-color: rgb(99, 99, 99);
+}
+
+.user-address-map-container>img {
+    border-radius: 10px;
+}
+
+.user-address-action-buttons-container {
+    width: 50%;
+    margin: 2% 0 1%;
+    justify-content: space-between;
+}
+
+.user-address-action-button-remove, .user-address-action-button-edit {
+    width: 40%;
+    padding: 3% 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: #f74646;
+    font-family: our-commitment-title;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.user-address-action-button-remove:hover {
+    background-color: #e01f1f;
+}
+
+.user-address-action-button-edit {
+    background-color: #46aef7;
+}
+
+.user-address-action-button-edit:hover {
+    background-color: #1fa3e0;
+}
+
+.remove-address-modal-container, .edit-address-modal-container {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.9);
+    transition: opacity 0.6s;
+}
+
+.remove-address-modal-body {
+    margin: 0 auto;
+    width: 30%;
+    padding: 1%;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.remove-address-modal-title {
+    margin: 1% 0;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: header-main-title;
+}
+
+.remove-address-modal-buttons-container {
+    margin: 3% 0 1%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.remove-address-modal-yes-botton,
+.remove-address-modal-no-botton,
+.edit-address-modal-cancel-botton,
+.edit-address-modal-confirm-botton {
+    padding: 2% 5%;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    background-color: #f74646;
+    font-family: our-commitment-title;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.remove-address-modal-no-botton:hover, .edit-address-modal-cancel-botton:hover {
+    background-color: #e01f1f;
+}
+
+.remove-address-modal-yes-botton, .edit-address-modal-confirm-botton {
+    background-color: #46aef7;
+}
+
+.remove-address-modal-yes-botton:hover, .edit-address-modal-confirm-botton:hover {
+    background-color: #1fa3e0;
+}
+
+.address-modal-edit-form {
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.address-modal-edit-form-input {
+    padding: 2% 10%;
+    margin: 1% 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: header-main-title;
+}
+
+.address-modal-edit-form-input::placeholder {
+    color: white;
+    font-size: 15px;
 }
