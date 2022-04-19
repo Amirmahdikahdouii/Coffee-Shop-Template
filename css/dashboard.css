@@ -605,6 +605,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: opacity 200ms;
 }
 
 .user-address-body {
@@ -756,7 +757,9 @@ body {
 .remove-address-modal-yes-botton,
 .remove-address-modal-no-botton,
 .edit-address-modal-cancel-botton,
-.edit-address-modal-confirm-botton {
+.edit-address-modal-confirm-botton,
+.add-new-address-botton-add,
+.add-new-address-botton-cancel {
     padding: 2% 5%;
     border: none;
     border-radius: 10px;
@@ -769,15 +772,21 @@ body {
     transition: all 500ms;
 }
 
-.remove-address-modal-no-botton:hover, .edit-address-modal-cancel-botton:hover {
+.remove-address-modal-no-botton:hover,
+.edit-address-modal-cancel-botton:hover,
+.add-new-address-botton-cancel:hover {
     background-color: #e01f1f;
 }
 
-.remove-address-modal-yes-botton, .edit-address-modal-confirm-botton {
+.remove-address-modal-yes-botton,
+.edit-address-modal-confirm-botton,
+.add-new-address-botton-add {
     background-color: #46aef7;
 }
 
-.remove-address-modal-yes-botton:hover, .edit-address-modal-confirm-botton:hover {
+.remove-address-modal-yes-botton:hover,
+.edit-address-modal-confirm-botton:hover,
+.add-new-address-botton-add:hover {
     background-color: #1fa3e0;
 }
 
@@ -804,4 +813,90 @@ body {
 .address-modal-edit-form-input::placeholder {
     color: white;
     font-size: 15px;
+}
+
+.add-address-button-container {
+    width: 100%;
+    padding: 1% 0;
+    margin: 1% 0;
+    justify-content: flex-start;
+}
+
+.add-address-button {
+    padding: 2% 5%;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: header-main-description;
+    transition: all 500ms;
+}
+
+.add-address-button:hover {
+    background-color: white;
+    color: rgba(0, 0, 0, 1);
+}
+
+.add-new-address-container {
+    width: 90%;
+    padding: 1%;
+    margin: 2% 0 1%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    border-radius: 10px;
+}
+
+.add-new-address-title {
+    width: 90%;
+    margin: 1% 0;
+    text-align: left;
+    color: rgba(0, 0, 0, .8);
+    font-size: 25px;
+    font-weight: bold;
+    font-family: header-main-title;
+}
+
+.add-new-address-form {
+    width: 90%;
+    margin: 1% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.add-new-address-input {
+    width: 80%;
+    padding: 3% 0 3% 3%;
+    margin: 2% 0;
+    background-color: rgba(0, 0, 0, .8);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: our-commitment-title;
+}
+
+.add-new-address-input::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: our-commitment-title;
+}
+
+.add-new-address-buttons-container {
+    margin: 2% 0 0;
+    width: 83%;
+    justify-content: space-between;
+}
+
+.add-new-address-botton-add, .add-new-address-botton-cancel {
+    padding: 3% 8%;
 }
