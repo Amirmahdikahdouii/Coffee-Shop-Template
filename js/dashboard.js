@@ -143,3 +143,28 @@ function UserAddressMethod() {
     });
 }
 UserAddressMethod();
+
+
+// Change profile Info
+
+let changeProfileInfoButton = document.querySelector('.change-personal-info-form-submit-button');
+let personalInfoSpans = [...document.getElementsByClassName('dashboard-section-info-item-value')];
+changeProfileInfoButton.addEventListener('click', (event) => {
+    let changeInformationsinputes = [...document.getElementsByClassName('change-personal-info-form-input')];
+    for (let index = 0; index < changeInformationsinputes.length; index++) {
+        if (changeInformationsinputes[index].value === '') {
+            alert(`Plaese Fill the ${changeInformationsinputes[index].name} input!`);
+            event.preventDefault()
+            return null;
+        }
+    }
+    let changedName = document.getElementById('change-personal-info-form-name');
+    let changedAge = document.getElementById('change-personal-info-form-birthday');
+    let changedEmail = document.getElementById('change-personal-info-form-email');
+    let changedPhone = document.getElementById('change-personal-info-form-phoneNumber');
+    personalInfoSpans[0].textContent = changedName.value;
+    personalInfoSpans[1].textContent = changedAge.value;
+    personalInfoSpans[2].textContent = changedEmail.value;
+    personalInfoSpans[3].textContent = changedPhone.value;
+    alert('Informations successfuly changed!');
+});
