@@ -158,13 +158,18 @@ changeProfileInfoButton.addEventListener('click', (event) => {
             return null;
         }
     }
+    let changedUserName = document.getElementById('change-personal-info-form-username');
     let changedName = document.getElementById('change-personal-info-form-name');
     let changedAge = document.getElementById('change-personal-info-form-birthday');
     let changedEmail = document.getElementById('change-personal-info-form-email');
     let changedPhone = document.getElementById('change-personal-info-form-phoneNumber');
+    let changedProfilePhoto = document.getElementById('change-personal-info-form-profile-photo');
+    let UsernameField = document.querySelector('.sideBar-menu-user-profile-photo-username');
+    UsernameField.textContent = changedUserName.value;
     personalInfoSpans[0].textContent = changedName.value;
     personalInfoSpans[1].textContent = changedAge.value;
     personalInfoSpans[2].textContent = changedEmail.value;
     personalInfoSpans[3].textContent = changedPhone.value;
+    document.querySelector('.sideBar-menu-user-profile-photo').src = window.URL.createObjectURL(changedProfilePhoto.files[0])
     alert('Informations successfuly changed!');
 });
