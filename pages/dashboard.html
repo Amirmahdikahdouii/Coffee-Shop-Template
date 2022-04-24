@@ -85,11 +85,11 @@
                             id="orders">Orders</span></li>
                     <li class="sideBar-menu-item"><span
                             onclick="showContentHandler('main-section-content-container-addresses', 'addresses')"
-                            id="addresses" class="sideBar-menu-item-active">Addresses</span></li>
-                    <li class="sideBar-menu-item"><span>MemberShip</span></li>
-                    <li class="sideBar-menu-item"><span>Favorites</span></li>
-                    <li class="sideBar-menu-item"><span>Change Personal Info</span></li>
-                    <li class="sideBar-menu-item"><span>Manage Password</span></li>
+                            id="addresses">Addresses</span></li>
+                    <li class="sideBar-menu-item"><span class="sideBar-menu-item-active"
+                            onclick="showContentHandler('main-section-content-container-change-personal-info', 'change-personal-info')"
+                            id="change-personal-info">Change Personal Info</span></li>
+                    <li class="sideBar-menu-item"><span>Manage Passwords</span></li>
                     <li class="sideBar-menu-item"><span>Settings</span></li>
                     <li class="sideBar-menu-item"><span>Exit</span></li>
                 </ul>
@@ -767,14 +767,19 @@
                     </div>
                 </div>
             </div>
-            <div class="add-new-address-container"  style="display: none;">
+            <div class="add-new-address-container" style="display: none;">
                 <h2 class="add-new-address-title">Add New Address</h2>
                 <form class="add-new-address-form">
-                    <input type="text" name="address" class="add-new-address-input" placeholder="Address" id="add-new-address-form-input-address" />
-                    <input type="text" name="name" class="add-new-address-input" placeholder="Name" id="add-new-address-form-input-name"/>
-                    <input type="text" name="telephone" class="add-new-address-input" placeholder="Telephone" id="add-new-address-form-input-telephone"/>
-                    <input type="text" name="phone" class="add-new-address-input" placeholder="Phone" id="add-new-address-form-input-phone"/>
-                    <input type="text" name="postalCode" class="add-new-address-input" placeholder="Postal Code" id="add-new-address-form-input-postalCode"/>
+                    <input type="text" name="address" class="add-new-address-input" placeholder="Address"
+                        id="add-new-address-form-input-address" />
+                    <input type="text" name="name" class="add-new-address-input" placeholder="Name"
+                        id="add-new-address-form-input-name" />
+                    <input type="text" name="telephone" class="add-new-address-input" placeholder="Telephone"
+                        id="add-new-address-form-input-telephone" />
+                    <input type="text" name="phone" class="add-new-address-input" placeholder="Phone"
+                        id="add-new-address-form-input-phone" />
+                    <input type="text" name="postalCode" class="add-new-address-input" placeholder="Postal Code"
+                        id="add-new-address-form-input-postalCode" />
                     <div class="add-new-address-buttons-container center">
                         <button class="add-new-address-botton-cancel" type="button">cancel</button>
                         <button class="add-new-address-botton-add" type="button">confirm</button>
@@ -787,6 +792,63 @@
             </div>
 
         </div>
+
+        <div class="main-section-content-container" id="main-section-content-container-change-personal-info">
+            <h1 class="main-section-content-title">Change Personal Info</h1>
+            <form class="change-personal-info">
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-personal-info-form-username"
+                            class="change-personal-info-form-label">Username</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="text" name="username" id="change-personal-info-form-username"
+                            class="change-personal-info-form-input" placeholder="Username">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-personal-info-form-name" class="change-personal-info-form-label">Name</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="text" name="name" id="change-personal-info-form-name"
+                            class="change-personal-info-form-input" placeholder="Name">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-personal-info-form-birthday"
+                            class="change-personal-info-form-label">Birthday</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="date" name="birthday" id="change-personal-info-form-birthday"
+                            class="change-personal-info-form-input">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-personal-info-form-email"
+                            class="change-personal-info-form-label">E-Mail</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="text" name="email" id="change-personal-info-form-email"
+                            class="change-personal-info-form-input" placeholder="E-Mail">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-personal-info-form-phoneNumber"
+                            class="change-personal-info-form-label">Phone</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="text" name="phone-number" id="change-personal-info-form-phoneNumber"
+                            class="change-personal-info-form-input" placeholder="Phone Number">
+                    </div>
+                </div>
+                <button class="change-personal-info-form-submit-button" type="button">Confirm</button>
+            </form>
+        </div>
+
     </section>
 
 

@@ -44,6 +44,11 @@ body {
     align-items: center;
 }
 
+.header-nav-container {
+    width: 90% !important;
+    padding: 1% !important;
+}
+
 .main-section {
     margin: 1% 0;
     width: 90%;
@@ -63,6 +68,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     border-right: 1px solid #ccc;
+    min-height: 100%;
 }
 
 .sideBar-menu-user-profile-photo-container {
@@ -899,4 +905,69 @@ body {
 
 .add-new-address-botton-add, .add-new-address-botton-cancel {
     padding: 3% 8%;
+}
+
+#main-section-content-container-addresses {
+    display: none;
+}
+
+.change-personal-info {
+    width: 80%;
+    margin: 1% 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.change-personal-info-form-row {
+    margin: 1% 0;
+    width: 100%;
+}
+
+.change-personal-info-form-column {
+    width: 50%;
+    justify-content: center;
+}
+
+.change-personal-info-form-label {
+    min-width: 30%;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: header-main-description;
+}
+
+
+.change-personal-info-form-input {
+    min-width: 70%;
+    padding: 3% 5%;
+    background-color: rgba(0, 0, 0, .8);
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: our-commitment-title;
+    border: none;
+    border-radius: 10px;
+}
+
+.change-personal-info-form-input::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: our-commitment-title;
+}
+
+.change-personal-info-form-submit-button {
+    padding: 2% 5%;
+    margin: 2% 0 1%;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: header-main-title;
+    cursor: pointer;
 }
