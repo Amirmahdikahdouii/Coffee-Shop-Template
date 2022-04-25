@@ -345,7 +345,6 @@ a {
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    background-image: linear-gradient(to left, #673400, #834200, #964B00, #A4550A, #B5651D);
 }
 
 .book-table-image-container {
@@ -428,12 +427,26 @@ a {
     text-align: center;
 }
 
+.col-7>input::placeholder {
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
 .col-7>textarea {
     padding: 2%;
     border: none;
     width: 100% !important;
     height: 100% !important;
     background-color: rgba(0, 0, 0, .4);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.col-7>textarea::placeholder {
     color: white;
     font-weight: bold;
     border-radius: 10px;

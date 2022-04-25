@@ -933,7 +933,7 @@ body {
 }
 
 .change-personal-info-form-label {
-    min-width: 30%;
+    min-width: 50%;
     text-align: left;
     color: white;
     font-weight: bold;
@@ -961,7 +961,7 @@ body {
     font-family: our-commitment-title;
 }
 
-.change-personal-info-form-submit-button {
+.change-personal-info-form-submit-button, .change-password-form-submit-button {
     padding: 2% 5%;
     margin: 2% 0 1%;
     border: none;
@@ -972,4 +972,8 @@ body {
     font-size: 18px;
     font-family: header-main-title;
     cursor: pointer;
+}
+
+#main-section-content-container-change-personal-info {
+    display: none;
 }

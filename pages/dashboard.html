@@ -86,10 +86,12 @@
                     <li class="sideBar-menu-item"><span
                             onclick="showContentHandler('main-section-content-container-addresses', 'addresses')"
                             id="addresses">Addresses</span></li>
-                    <li class="sideBar-menu-item"><span class="sideBar-menu-item-active"
+                    <li class="sideBar-menu-item"><span
                             onclick="showContentHandler('main-section-content-container-change-personal-info', 'change-personal-info')"
                             id="change-personal-info">Change Personal Info</span></li>
-                    <li class="sideBar-menu-item"><span>Manage Passwords</span></li>
+                    <li class="sideBar-menu-item"><span class="sideBar-menu-item-active"
+                            onclick="showContentHandler('main-section-content-container-change-password', 'change-password')"
+                            id="change-password">Change Password</span></li>
                     <li class="sideBar-menu-item"><span>Settings</span></li>
                     <li class="sideBar-menu-item"><span>Exit</span></li>
                 </ul>
@@ -856,6 +858,44 @@
                     </div>
                 </div>
                 <button class="change-personal-info-form-submit-button" type="button">Confirm</button>
+            </form>
+        </div>
+
+        <div class="main-section-content-container" id="main-section-content-container-change-password">
+            <h1 class="main-section-content-title">Change password</h1>
+            <form class="change-personal-info">
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-password-form-old-password" class="change-personal-info-form-label">Old
+                            Password</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="password" name="old-password" id="change-password-form-old-password"
+                            class="change-personal-info-form-input" placeholder="Old Password">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-password-form-new-password" class="change-personal-info-form-label">New
+                            Password</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="password" name="new-password" id="change-password-form-new-password"
+                            class="change-personal-info-form-input" placeholder="New Password">
+                    </div>
+                </div>
+                <div class="change-personal-info-form-row center">
+                    <div class="change-personal-info-form-column center">
+                        <label for="change-password-form-new-password-confirm"
+                            class="change-personal-info-form-label">Confirm Password</label>
+                    </div>
+                    <div class="change-personal-info-form-column center">
+                        <input type="password" name="new-password-confirm"
+                            id="change-password-form-new-password-confirm" class="change-personal-info-form-input"
+                            placeholder="Confirm Password">
+                    </div>
+                </div>
+                <button class="change-password-form-submit-button" type="button">Confirm</button>
             </form>
         </div>
 

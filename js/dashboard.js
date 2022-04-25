@@ -173,3 +173,29 @@ changeProfileInfoButton.addEventListener('click', (event) => {
     document.querySelector('.sideBar-menu-user-profile-photo').src = window.URL.createObjectURL(changedProfilePhoto.files[0])
     alert('Informations successfuly changed!');
 });
+
+
+// Check new password and confirm password inputes "Change Password Section"
+
+let changePasswordFormButton = document.querySelector('.change-password-form-submit-button');
+
+changePasswordFormButton.addEventListener('click', (e) => {
+    let oldPassword = document.getElementById('change-password-form-old-password');
+    let newPassword = document.getElementById('change-password-form-new-password');
+    let newPasswordConfirm = document.getElementById('change-password-form-new-password-confirm');
+    if (newPassword.value === "" || newPasswordConfirm.value === "" || oldPassword.value === "") {
+        alert("Password Feilds are Empty!");
+        oldPassword.style.border = '1px solid red';
+        newPassword.style.border = '1px solid red';
+        newPasswordConfirm.style.border = '1px solid red';
+    }
+    else if (newPassword.value !== newPasswordConfirm.value) {
+        alert('New Passwords Feilds Value are not match!');
+        newPassword.style.border = '1px solid red';
+        newPasswordConfirm.style.border = '1px solid red';
+        return null;
+    } else {
+        alert('Password Successfully changed!');
+        changePasswordFormButton.parentElement.submit();
+    }
+})
