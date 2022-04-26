@@ -912,6 +912,11 @@ a {
 
 }
 
+@media screen and (max-width:900px) {
+    .header-menu-item>a {
+        font-size: 16px;
+    }
+}
 
 @media screen and (max-width:768px) {
     .header-main-description {
@@ -1045,5 +1050,97 @@ a {
 
     .our-full-menu-item:nth-child(9) {
         display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #header-nav-menu-icon, #header-nav-menu-close-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .welcome,
+    .our-menu-description-title {
+        font-size: 25px;
+    }
+
+    .header-main-title,
+    .our-story-description-title-2,
+    .our-menu-description-title-2,
+    .best-coffe-seller-header-title:nth-child(2),
+    .our-full-menu-header-title {
+        font-size: 18px;
+    }
+
+    .header-main-description,
+    .our-story-description-text-mobile,
+    .best-coffe-seller-item-title:nth-child(2),
+    .our-full-menu-header-description {
+        font-size: 14px;
+    }
+
+    .header-main-button,
+    .our-menu-button,
+    .book-table-button,
+    .best-coffe-seller-item-button,
+    .our-full-menu-header-button,
+    .full-menu-load-more-button {
+        font-size: 13px;
+    }
+
+    .header-coffeshop-info-description,
+    .our-commitment-title,
+    .best-coffe-seller-item-title {
+        font-size: 13px;
+    }
+
+    .our-story-description-title {
+        font-size: 25px;
+    }
+
+    .our-story-image {
+        width: 70%;
+    }
+
+    .our-commitment-icon>svg {
+        height: 20px;
+        width: 20px;
+    }
+
+    .our-menu-image-container {
+        width: 30%;
+    }
+
+    .col-7>input::placeholder,
+    .col-7>input,
+    .col-7>textarea::placeholder,
+    .col-7>textarea {
+        font-size: 10px;
+    }
+
+    .best-coffe-seller-item-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .best-coffe-seller-item-image>img {
+        height: 100%;
+    }
+
+    .image-gallery-section {
+        justify-content: space-around;
+    }
+
+    .image-gallery-item {
+        width: 20%;
+    }
+
+    .our-full-menu-item {
+        width: 130px;
+        height: 130px;
+    }
+
+    .our-full-menu-item-title {
+        font-size: 12px;
     }
 }

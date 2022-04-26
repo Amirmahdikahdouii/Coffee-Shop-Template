@@ -135,3 +135,10 @@
         align-self: flex-end;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #header-nav-menu-icon, #header-nav-menu-close-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
