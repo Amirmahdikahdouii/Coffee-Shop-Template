@@ -163,6 +163,14 @@ body {
     border-radius: 10px;
 }
 
+.cart-list-item-mobile-product-title-container {
+    display: none;
+    width: 82%;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 5% 0;
+}
+
 .cart-list-item-count-container {
     padding: 4% 5%;
     width: 70%;
@@ -263,4 +271,202 @@ body {
     font-weight: bold;
     font-size: 20px;
     font-family: header-main-description;
+}
+
+@media screen and (max-width:968px) {
+    .cart-list-item-title {
+        font-size: 23px;
+    }
+
+    .cart-list-item-price {
+        font-size: 18px;
+    }
+
+    .items-sum-price-title,
+    .items-sum-off-price-title,
+    .items-sum-off-price,
+    .continue-shopping-button,
+    .cart-list-item-count {
+        font-size: 15px;
+    }
+
+    .items-sum-full-price-title,
+    .items-sum-full-price,
+    .shopping-prices-procedure,
+    .cart-list-item-price-without-off {
+        font-size: 13px;
+    }
+
+    .cart-list-item-sell-info-text {
+        font-size: 11px;
+    }
+
+    .cart-list-item-sell-info>svg,
+    .cart-list-item-delete-button>svg,
+    .cart-list-item-plus-button>svg,
+    .cart-list-item-mines-button>svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .cart-list-item-image-count-container {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:890px) {
+    .main-container {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .aside-checkout-container {
+        width: 68%;
+    }
+
+    .items-sum-price-title,
+    .items-sum-off-price-title,
+    .items-sum-off-price,
+    .continue-shopping-button,
+    .cart-list-item-count {
+        font-size: 18px;
+    }
+
+    .items-sum-full-price-title,
+    .items-sum-full-price,
+    .shopping-prices-procedure,
+    .cart-list-item-price-without-off {
+        font-size: 15px;
+    }
+
+    .cart-list-item-sell-info>svg,
+    .cart-list-item-delete-button>svg,
+    .cart-list-item-plus-button>svg,
+    .cart-list-item-mines-button>svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cart-list-item-delete-button,
+    .cart-list-item-plus-button,
+    .cart-list-item-mines-button {
+        padding: 5%;
+    }
+
+    .continue-shopping-button {
+        padding: 3% 0;
+    }
+
+    .aside-checkout-container {
+        margin: 2% 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cart-list-item-count-container {
+        width: 100%;
+    }
+
+    .cart-list-item-image-count-container {
+        width: 80%;
+        justify-content: space-between;
+        min-height: 150px;
+    }
+
+    .cart-list-item-count-container {
+        width: 50%;
+    }
+
+    .cart-list-item-image-container {
+        min-width: 70px;
+    }
+
+    .cart-list-item-main-section {
+        margin-left: 3%;
+        width: 70%;
+    }
+
+    .cart-list-item {
+        justify-content: center;
+    }
+
+    .items-sum-price-title,
+    .items-sum-off-price-title,
+    .items-sum-off-price,
+    .continue-shopping-button,
+    .cart-list-item-count {
+        font-size: 15px;
+    }
+
+    .items-sum-full-price-title,
+    .items-sum-full-price,
+    .shopping-prices-procedure,
+    .cart-list-item-price-without-off {
+        font-size: 13px;
+    }
+
+    .cart-list-item-sell-info-text {
+        font-size: 11px;
+    }
+
+    .cart-list-item-sell-info>svg,
+    .cart-list-item-delete-button>svg,
+    .cart-list-item-plus-button>svg,
+    .cart-list-item-mines-button>svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cart-list-item-main-section {
+        display: none;
+    }
+
+    .cart-list-item-mobile-product-title-container {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .cart-items-container,
+    .aside-checkout-container {
+        width: 80%;
+    }
+
+    .items-sum-price-title,
+    .items-sum-off-price-title,
+    .items-sum-off-price,
+    .continue-shopping-button,
+    .cart-list-item-count {
+        font-size: 15px;
+    }
+
+    .items-sum-full-price-title,
+    .items-sum-full-price,
+    .shopping-prices-procedure,
+    .cart-list-item-price-without-off {
+        font-size: 13px;
+    }
+
+    .cart-list-item-sell-info-text {
+        font-size: 11px;
+    }
+
+    .cart-list-item-sell-info>svg,
+    .cart-list-item-delete-button>svg,
+    .cart-list-item-plus-button>svg,
+    .cart-list-item-mines-button>svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cart-list-item-count-container {
+        min-height: 40px;
+    }
+
+    .cart-list-item-delete-button,
+    .cart-list-item-plus-button,
+    .cart-list-item-mines-button {
+        min-height: 30px;
+    }
 }
