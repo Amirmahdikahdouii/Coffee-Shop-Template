@@ -1119,7 +1119,7 @@ body {
     }
 
     .product-more-detail-table-column-span {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .product-comments-section-title {
@@ -1168,7 +1168,7 @@ body {
     }
 
     .rate-the-product-star-mark {
-        font-size: 12px;
+        font-size: 13px;
     }
 
     .new-comment-form>input, #new-comment {
@@ -1179,8 +1179,33 @@ body {
 }
 
 @media screen and (max-width:576px) {
+    .product-image-container,
+    .more-picture-item {
+        height: fit-content;
+    }
+
+    .product-image-container {
+        min-width: 200px;
+    }
+
+    .more-pictures-container {
+        width: 100%;
+    }
+
+    .more-picture-item {
+        min-width: 50px;
+    }
+    .related-products-section{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .related-products-item-image{
+        min-width: 70px;
+        height: 80px;
+    }
     .product-info-title {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     .product-info-full-name {
@@ -1245,13 +1270,13 @@ body {
     }
 
     .related-products-item-offer {
-        width: 25px;
-        height: 25px;
-        font-size: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 9px;
     }
 
     .related-products-item-price-with-off {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     #more-details-section-link {
