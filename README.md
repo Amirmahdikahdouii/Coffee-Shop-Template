@@ -13,7 +13,6 @@
     5.Blog Section 
     6.Forget Password page 
     7.make better moves with JS
-    8.about us page
-    9.contact us page
+    8.contact us page
     </pre>
 </p>
