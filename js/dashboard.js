@@ -1,3 +1,8 @@
+let mainSection = document.querySelector('.main-section');
+let sideBarMenu = document.getElementById('SideBar-menu-container');
+const changeSideBarHeight = () => {
+    console.log(mainSection.offsetHeight);
+}
 //showContentHandler
 
 showContentHandler = (contentId, tagId) => {
@@ -13,6 +18,7 @@ showContentHandler = (contentId, tagId) => {
     })
     let tag = document.getElementById(tagId);
     tag.className = 'sideBar-menu-item-active';
+    changeSideBarHeight();
 }
 
 // Factors According

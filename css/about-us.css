@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: welcome;
+    src: url('../font/Inspiration-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: header-main-title;
+    src: url('../font/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: header-main-description;
+    src: url('../font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: our-commitment-title;
+    src: url('../font/LibreFranklin-Light.ttf');
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-image: url('../img/pattern.jpg');
+    background-position: center;
+    background-color: #6f4d37;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: black;
+}
+
+.main-section {
+    margin: 1% auto;
+    padding: 1%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 87%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.location {
+    order: 2;
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    font-family: header-main-title;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+
+.about-us-info {
+    height: 400px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+.about-us-title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: our-commitment-title;
+}
+
+.about-us-description {
+    margin: 2% 0;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: header-main-description;
+}
+
+.about-us-info-row {
+    margin: 2% 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.about-us-info-title {
+    width: 30%;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: header-main-title;
+}
+
+.about-us-info-value {
+    width: 60%;
+    color: white;
+    font-weight: normal;
+    font-size: 17px;
+    font-family: header-main-title;
+}
