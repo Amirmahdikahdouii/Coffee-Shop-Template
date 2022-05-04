@@ -116,3 +116,79 @@ a {
     font-size: 17px;
     font-family: header-main-title;
 }
+
+@media screen and (max-width:986px) {
+    .main-section {
+        justify-content: space-between;
+        border-color: rgba(0, 0, 0, 0);
+    }
+
+    .about-us-info {
+        width: 40%;
+        height: 350px;
+    }
+
+    .about-us-title {
+        font-size: 25px;
+    }
+
+    .about-us-description,
+    .about-us-info-title,
+    .about-us-info-value {
+        font-size: 15px;
+    }
+
+    .location {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-section {
+        width: 95%;
+    }
+
+    .location {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width:692px) {
+    .about-us-title {
+        font-size: 22px;
+    }
+
+    .about-us-info {
+        width: 50%;
+        height: 300px;
+    }
+
+    .about-us-description,
+    .about-us-info-title,
+    .about-us-info-value {
+        font-size: 13px;
+    }
+
+    .location {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .main-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .location {
+        order: 0;
+    }
+
+    .about-us-info {
+        width: 90%;
+        align-items: center;
+    }
+}
