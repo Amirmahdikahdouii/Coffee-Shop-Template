@@ -1179,6 +1179,7 @@ body {
 }
 
 @media screen and (max-width:576px) {
+
     .product-image-container,
     .more-picture-item {
         height: fit-content;
@@ -1195,15 +1196,17 @@ body {
     .more-picture-item {
         min-width: 50px;
     }
-    .related-products-section{
+
+    .related-products-section {
         width: 90%;
         margin: 0 auto;
     }
 
-    .related-products-item-image{
+    .related-products-item-image {
         min-width: 70px;
         height: 80px;
     }
+
     .product-info-title {
         font-size: 20px;
     }
