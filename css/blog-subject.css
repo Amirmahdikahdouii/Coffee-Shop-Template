@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: welcome;
+    src: url('../font/Inspiration-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: header-main-title;
+    src: url('../font/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: header-main-description;
+    src: url('../font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: our-commitment-title;
+    src: url('../font/LibreFranklin-Light.ttf');
+}
+
+a {
+    color: black;
+}
+
+body {
+    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+
+.header-nav-container {
+    width: 88%;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.footer {
+    background-color: rgba(0, 0, 0, 1);
+}
+@media screen and (max-width: 568px) {
+    .header-nav-container {
+        width: 100%;
+        border-radius: 0;
+    }
+    .logo {
+        width: 97%;
+    }
+
+}

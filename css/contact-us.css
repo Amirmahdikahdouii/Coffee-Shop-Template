@@ -54,7 +54,6 @@ a {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    border: 1px solid #ccc;
     border-radius: 10px;
 }
 
@@ -64,14 +63,9 @@ a {
     font-size: 30px;
     font-weight: bold;
     font-family: our-commitment-title;
-    border-bottom: 1px solid rgba(0, 0, 0, 0);
     cursor: default;
     text-align: center;
     transition: all 500ms;
-}
-
-.contact-us-form-title:hover {
-    border-bottom: 1px solid #ccc;
 }
 
 .contact-us-form {
@@ -133,10 +127,6 @@ a {
 }
 
 @media screen and (max-width: 1200px) {
-    .main-section {
-        border-color: rgba(0, 0, 0, 0);
-    }
-
     .contact-us-form-title {
         font-size: 25px;
     }
