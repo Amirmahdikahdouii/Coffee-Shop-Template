@@ -239,7 +239,7 @@ body {
     justify-content: flex-start;
 }
 
-.cart-list-item-sell-info>svg {
+.cart-list-item-sell-info > svg {
     color: #aaa;
 }
 
@@ -273,7 +273,7 @@ body {
     font-family: header-main-description;
 }
 
-@media screen and (max-width:968px) {
+@media screen and (max-width: 968px) {
     .cart-list-item-title {
         font-size: 23px;
     }
@@ -301,10 +301,10 @@ body {
         font-size: 11px;
     }
 
-    .cart-list-item-sell-info>svg,
-    .cart-list-item-delete-button>svg,
-    .cart-list-item-plus-button>svg,
-    .cart-list-item-mines-button>svg {
+    .cart-list-item-sell-info > svg,
+    .cart-list-item-delete-button > svg,
+    .cart-list-item-plus-button > svg,
+    .cart-list-item-mines-button > svg {
         width: 17px;
         height: 17px;
     }
@@ -314,7 +314,7 @@ body {
     }
 }
 
-@media screen and (max-width:890px) {
+@media screen and (max-width: 890px) {
     .main-container {
         flex-flow: column nowrap;
         align-items: center;
@@ -339,10 +339,10 @@ body {
         font-size: 15px;
     }
 
-    .cart-list-item-sell-info>svg,
-    .cart-list-item-delete-button>svg,
-    .cart-list-item-plus-button>svg,
-    .cart-list-item-mines-button>svg {
+    .cart-list-item-sell-info > svg,
+    .cart-list-item-delete-button > svg,
+    .cart-list-item-plus-button > svg,
+    .cart-list-item-mines-button > svg {
         width: 20px;
         height: 20px;
     }
@@ -362,7 +362,11 @@ body {
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
+    .cart-list-item {
+        border-bottom: 1px solid rgba(0, 0, 0, 0);
+    }
+
     .cart-list-item-count-container {
         width: 100%;
     }
@@ -409,10 +413,10 @@ body {
         font-size: 11px;
     }
 
-    .cart-list-item-sell-info>svg,
-    .cart-list-item-delete-button>svg,
-    .cart-list-item-plus-button>svg,
-    .cart-list-item-mines-button>svg {
+    .cart-list-item-sell-info > svg,
+    .cart-list-item-delete-button > svg,
+    .cart-list-item-plus-button > svg,
+    .cart-list-item-mines-button > svg {
         width: 25px;
         height: 25px;
     }
@@ -423,10 +427,11 @@ body {
 
     .cart-list-item-mobile-product-title-container {
         display: flex;
+        justify-content: center;
     }
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width: 500px) {
 
     .cart-items-container,
     .aside-checkout-container {
@@ -452,10 +457,10 @@ body {
         font-size: 11px;
     }
 
-    .cart-list-item-sell-info>svg,
-    .cart-list-item-delete-button>svg,
-    .cart-list-item-plus-button>svg,
-    .cart-list-item-mines-button>svg {
+    .cart-list-item-sell-info > svg,
+    .cart-list-item-delete-button > svg,
+    .cart-list-item-plus-button > svg,
+    .cart-list-item-mines-button > svg {
         width: 25px;
         height: 25px;
     }

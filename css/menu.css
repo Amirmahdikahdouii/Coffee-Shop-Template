@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: welcome;
+    src: url('../font/Inspiration-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: header-main-title;
+    src: url('../font/Prompt-Light.ttf');
+}
+
+@font-face {
+    font-family: header-main-description;
+    src: url('../font/Manrope-Light.ttf');
+}
+
+@font-face {
+    font-family: our-commitment-title;
+    src: url('../font/LibreFranklin-Light.ttf');
+}
+
+body {
+    background-image: url('../img/pattern.jpg');
+    background-position: center;
+    background-color: #6f4d37;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    color: black;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    width: 89%;
+    margin: 2% auto 0;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: repeat(3, 30%);
+    justify-content: space-between;
+}
+
+.menu-item-container {
+    padding: 1%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-container:hover {
+    transition: all 400ms;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.menu-item-image-container {
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 2% auto 1%;
+    padding: 1%;
+    border-radius: 10px;
+}
+
+.menu-item-image {
+    border-radius: 10px;
+}
+
+
+.menu-item-title-container {
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-title {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: header-main-description;
+}
+
+.menu-item-price-container {
+    margin: 1% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-price,
+.menu-item-old-price {
+    margin: 2% 0 0;
+    color: white;
+    font-family: header-main-description;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-item-price-off {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(214, 31, 31);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: header-main-description;
+    border-radius: 50%;
+}
+
+.menu-item-old-price {
+    font-size: 13px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.menu-item-buttons-container {
+    margin: 1% auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-add-remove-buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-item-add-to-cart-button {
+    border: none;
+    padding: 5% 8%;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: our-commitment-title;
+    cursor: pointer;
+}
+
+.menu-item-add-to-cart-button:hover {
+    transition: all 500ms;
+    color: black;
+    background-color: white;
+}
+
+
+.menu-item-plus-button-count,
+.menu-item-minus-button-count,
+.menu-item-delete-button-count {
+    width: 30%;
+    padding: 5% 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.menu-item-minus-button-count,
+.menu-item-delete-button-count {
+    color: white;
+    background-color: #a80e1b;
+}
+
+.menu-item-minus-button-count:hover,
+.menu-item-delete-button-count:hover {
+    background-color: #c71221;
+}
+
+.menu-item-plus-button-count {
+    color: white;
+    background-color: rgba(5, 131, 210, .8);
+}
+
+.menu-item-plus-button-count:hover {
+    background-color: rgba(5, 131, 210, 1);
+}

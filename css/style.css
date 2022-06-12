@@ -39,6 +39,12 @@ a {
     color: black;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .header {
     padding: 0;
 }
@@ -178,7 +184,7 @@ a {
     background-color: #6f4d37;
 }
 
-.our-story-image>img {
+.our-story-image > img {
     border-radius: 10px;
 }
 
@@ -290,7 +296,7 @@ a {
     align-items: center;
 }
 
-.our-menu-image-container>img {
+.our-menu-image-container > img {
     border-radius: 10px;
 }
 
@@ -357,7 +363,7 @@ a {
     background-color: #fff;
 }
 
-.book-table-image-container>img {
+.book-table-image-container > img {
     border-radius: 10px;
 }
 
@@ -415,7 +421,7 @@ a {
     cursor: pointer;
 }
 
-.col-7>input {
+.col-7 > input {
     padding: 2%;
     border: none;
     width: 100%;
@@ -427,14 +433,14 @@ a {
     text-align: center;
 }
 
-.col-7>input::placeholder {
+.col-7 > input::placeholder {
     color: white;
     font-weight: bold;
     border-radius: 10px;
     text-align: center;
 }
 
-.col-7>textarea {
+.col-7 > textarea {
     padding: 2%;
     border: none;
     width: 100% !important;
@@ -446,7 +452,7 @@ a {
     text-align: center;
 }
 
-.col-7>textarea::placeholder {
+.col-7 > textarea::placeholder {
     color: white;
     font-weight: bold;
     border-radius: 10px;
@@ -543,7 +549,7 @@ a {
     align-items: center;
 }
 
-.best-coffe-seller-item-image>img {
+.best-coffe-seller-item-image > img {
     border-radius: 10px;
 }
 
@@ -727,38 +733,148 @@ a {
     display: grid;
 }
 
-.our-full-menu-item {
-    margin: 4% 0;
-    width: 390px;
-    height: 390px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
+.menu-item-container {
+    padding: 1%;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
-.our-full-menu-item:hover {
-    transition: all 700ms;
+.menu-item-container:hover {
+    transition: all 400ms;
     background-color: rgba(0, 0, 0, .2);
 }
 
-.our-full-menu-item-image {
-    margin: 2% 0 0;
-    width: 75%;
-    height: 75%;
-    color: black;
-    background-color: white;
+.menu-item-image-container {
+    width: 300px;
+    height: 300px;
+    max-width: 300px;
+    max-height: 300px;
+    margin: 2% auto 1%;
+    padding: 1%;
     border-radius: 10px;
+}
+
+.menu-item-image {
+    border-radius: 10px;
+}
+
+
+.menu-item-title-container {
+    width: 90%;
+    margin: 1% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-title {
+    color: #ccc;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: header-main-description;
+}
+
+.menu-item-price-container {
+    margin: 1% 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-prices {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item-price,
+.menu-item-old-price {
+    margin: 2% 0 0;
+    color: white;
+    font-family: header-main-description;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.menu-item-price-off {
+    width: 35px;
+    height: 35px;
+    background-color: rgb(214, 31, 31);
+    color: white;
+    font-weight: bolder;
+    font-size: 15px;
+    font-family: header-main-description;
+    border-radius: 50%;
+}
+
+.menu-item-old-price {
+    font-size: 13px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+
+.menu-item-buttons-container {
+    margin: 1% auto;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-item-add-remove-buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.menu-item-add-to-cart-button {
+    border: none;
+    padding: 5% 8%;
+    background-color: rgba(0, 0, 0, .7);
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: our-commitment-title;
     cursor: pointer;
 }
 
-.our-full-menu-item-title {
-    margin: 4% 0;
-    color: white;
-    font-family: our-commitment-title;
+.menu-item-add-to-cart-button:hover {
+    transition: all 500ms;
+    color: black;
+    background-color: white;
+}
+
+
+.menu-item-plus-button-count,
+.menu-item-minus-button-count,
+.menu-item-delete-button-count {
+    width: 30%;
+    padding: 5% 0;
+    border: none;
+    border-radius: 5px;
     font-weight: bold;
-    font-size: 20px;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.menu-item-minus-button-count,
+.menu-item-delete-button-count {
+    color: white;
+    background-color: #a80e1b;
+}
+
+.menu-item-minus-button-count:hover,
+.menu-item-delete-button-count:hover {
+    background-color: #c71221;
+}
+
+.menu-item-plus-button-count {
+    color: white;
+    background-color: rgba(5, 131, 210, .8);
+}
+
+.menu-item-plus-button-count:hover {
+    background-color: rgba(5, 131, 210, 1);
 }
 
 .full-menu-load-more-button-container {
@@ -787,7 +903,7 @@ a {
     background-color: rgba(0, 0, 0, .9);
 }
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width: 1200px) {
     .header-main-title {
         width: 80%;
         font-size: 40px;
@@ -813,7 +929,7 @@ a {
         align-items: center;
     }
 
-    .header-coffeshop-info-title>span {
+    .header-coffeshop-info-title > span {
         margin: 8% 0;
         font-weight: bold;
     }
@@ -912,13 +1028,13 @@ a {
 
 }
 
-@media screen and (max-width:900px) {
-    .header-menu-item>a {
+@media screen and (max-width: 900px) {
+    .header-menu-item > a {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
     .header-main-description {
         width: 80%;
     }
@@ -933,7 +1049,7 @@ a {
         justify-content: center;
     }
 
-    .header-coffeshop-info-title>span {
+    .header-coffeshop-info-title > span {
         display: none;
     }
 
@@ -1102,7 +1218,7 @@ a {
         width: 70%;
     }
 
-    .our-commitment-icon>svg {
+    .our-commitment-icon > svg {
         height: 20px;
         width: 20px;
     }
@@ -1111,10 +1227,10 @@ a {
         width: 30%;
     }
 
-    .col-7>input::placeholder,
-    .col-7>input,
-    .col-7>textarea::placeholder,
-    .col-7>textarea {
+    .col-7 > input::placeholder,
+    .col-7 > input,
+    .col-7 > textarea::placeholder,
+    .col-7 > textarea {
         font-size: 10px;
     }
 
@@ -1123,7 +1239,7 @@ a {
         height: 100px;
     }
 
-    .best-coffe-seller-item-image>img {
+    .best-coffe-seller-item-image > img {
         height: 100%;
     }
 
