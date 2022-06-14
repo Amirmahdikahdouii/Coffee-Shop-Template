@@ -47,7 +47,7 @@ a {
 
 .main-container {
     width: 89%;
-    margin: 2% auto 0;
+    margin: 2% auto;
     display: grid;
     grid-template-rows: repeat(3, auto);
     grid-template-columns: repeat(3, 30%);
@@ -59,6 +59,7 @@ a {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 .menu-item-container:hover {
