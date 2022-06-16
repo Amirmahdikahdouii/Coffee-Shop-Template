@@ -2,7 +2,7 @@
 <p>HTML5 Coffe Shop Full template</p>
 <p>This Repo is not complete yet!</p>
 <p>
-<b style="color: red;"> #TODO: </b>
+<b> #TODO: </b>
     <pre>
     1.Menu page 
     2.Dashboard 

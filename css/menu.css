@@ -198,3 +198,48 @@ a {
 .menu-item-plus-button-count:hover {
     background-color: rgba(5, 131, 210, 1);
 }
+
+@media screen and (max-width:986px) {
+    .menu-item-image-container {
+        width: 250px;
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .main-container {
+        width: 89%;
+        margin: 2% auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-rows: repeat(4, auto);
+        grid-template-columns: repeat(2, 40%);
+    }
+
+    .menu-item-image-container {
+        width: 200px;
+        height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .menu-item-image-container {
+        width: 180px;
+        height: 180px;
+        max-width: 180px;
+        max-height: 180px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+}
