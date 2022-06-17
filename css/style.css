@@ -1025,7 +1025,15 @@ a {
         width: 250px;
         height: 250px;
     }
-
+    .menu-item-image-container {
+        width: 250px;
+        height: 250px;
+        max-width: 250px;
+        max-height: 250px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
@@ -1167,6 +1175,23 @@ a {
     .our-full-menu-item:nth-child(9) {
         display: none;
     }
+    .main-container {
+        width: 89%;
+        margin: 2% auto;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 45%);
+    }
+
+    .menu-item-image-container {
+        width: 200px;
+        height: 200px;
+        max-width: 200px;
+        max-height: 200px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1258,5 +1283,54 @@ a {
 
     .our-full-menu-item-title {
         font-size: 12px;
+    }
+    .menu-item-container{
+        justify-content: flex-start;
+    }
+    .menu-item-image-container {
+        width: 80%;
+        max-width: 180px;
+        height: 160px;
+        margin: 2% auto 1%;
+        padding: 1%;
+        border-radius: 10px;
+    }
+    .menu-item-title{
+        font-size: 17px;
+    }
+    .menu-item-old-price{
+        font-size: 11px;
+    }
+    .menu-item-price{
+        font-size: 15px;
+    }
+    .menu-item-add-to-cart-button{
+        width: 60%;
+        font-size: 14px;
+        margin-bottom: 2%;
+    }
+    .menu-item-price-off center{
+        width: 30px;
+        height: 30px;
+        font-size: 13px;
+    }
+    .menu-item-buttons-container{
+        flex-direction: column;
+    }
+    .menu-item-add-remove-buttons{
+        width: 100%;
+        margin: 2% 0 1%;
+        justify-content: space-between;
+    }
+    .menu-item-plus-button-count,
+    .menu-item-minus-button-count,
+    .menu-item-delete-button-count{
+        width: 20%;
+    }
+    .menu-item-plus-button-count>svg,
+    .menu-item-minus-button-count>svg,
+    .menu-item-delete-button-count>svg{
+        width: 15px;
+        height: 15px;
     }
 }
