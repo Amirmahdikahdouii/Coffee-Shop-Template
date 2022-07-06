@@ -14,20 +14,20 @@ submitButton.addEventListener("click", (event) => {
         event.preventDefault();
         return null;
     }
-    const checkLengthOfInputValues = (inputValue, validLength) => {
+    const checkLengthOfInputValues = (inputValue, validLength, message) => {
         if (inputValue.length > validLength) {
-            stopEvent("Email value Should be maximum 50 character");
+            stopEvent(message);
         }
     }
-    checkLengthOfInputValues(usernameInputValue, 50);
+    checkLengthOfInputValues(usernameInputValue, 50, "username should be maximum 50 character");
     if (!emailInputValue.match(emailValidationRegex)) {
         stopEvent("Please enter valid E-Mail");
     }
-    checkLengthOfInputValues(emailInputValue, 50);
+    checkLengthOfInputValues(emailInputValue, 50, "email should be maximum 50 character");
     if (passwordInputValue !== confirmPasswordInputValue) {
         stopEvent("Password Field and Confirm Password Field Values are not match!");
     }
-    checkLengthOfInputValues(passwordInputValue, 80);
+    checkLengthOfInputValues(passwordInputValue, 80, "password should be maximum 80 character");
     let xHttpRequest = new XMLHttpRequest();
     xHttpRequest.onload = () => {
         alert("Done");
